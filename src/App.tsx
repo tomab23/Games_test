@@ -1,8 +1,10 @@
-import { Search } from "lucide-react";
+
 import HeaderApp from "./components/layout/HeaderApp";
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import CardGame from "./components/CardGame";
+import { Search } from "lucide-react";
+import RAWGSearch from "./components/RAWGSearch";
 
 function App() {
   return (
@@ -17,6 +19,11 @@ function App() {
           <Search />
         </Button>
       </div>
+
+      <br /><br />
+
+      {/* test search input */}
+      <RAWGSearch apiKey="TA_CLE_API_RAWG" placeholder="Cherche un jeu..." pageSize={10} />
 
       <div className="mt-20 self-center">
         <p>Popular games</p>
